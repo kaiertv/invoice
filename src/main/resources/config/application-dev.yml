@@ -45,8 +45,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost:5432/invoice
-    username: invoice
-    password:
+    username: store
+    password: 12345
     hikari:
       poolName: Hikari
       auto-commit: false
@@ -55,7 +55,7 @@ spring:
     show-sql: true
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
-    contexts: dev, faker
+    contexts: dev #faker
   mail:
     host: localhost
     port: 25
